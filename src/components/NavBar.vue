@@ -1,0 +1,41 @@
+<template>
+  <div class="container">
+      <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Specials</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
+  </div>
+</template>
+
+<script>
+export default {
+    name:"NavBar"
+}
+</script>
+
+
+<style  scoped>
+nav{
+    /* margin-left: 70px; */
+    padding-top: 50px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+    nav ul li{
+        display: inline-block;
+
+    }
+
+    nav ul li a{
+        padding:15px 50px;
+        padding-left: 0;
+        display: inline-block;
+        color: unset;
+    }
+</style>
