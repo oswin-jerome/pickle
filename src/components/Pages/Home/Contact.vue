@@ -57,6 +57,10 @@ export default {
         margin-top: 20px;
     }
 
+    input:focus,textarea{
+        outline: none;
+    }
+
     .black-btn{
         margin: 0;
         margin-top: 50px;

@@ -24,8 +24,13 @@ export default {
 
 }
 
+html{
+
+  scroll-behavior: smooth;
+}
+
 body{
-  background:rgb(239, 243, 253)
+  background:rgb(239, 243, 253);
 }
 
 .black-btn{

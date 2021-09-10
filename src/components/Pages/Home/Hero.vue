@@ -7,7 +7,7 @@
                 in every bite
               </h1>
               <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime atque aspernatur corrupti voluptatum rem.</p>
-                <a href="" id="cta">Contact us</a>
+                <a href="#contact" id="cta">Contact us</a>
           </div>
           <div class="col-md-6 col-sm-12 p-0 m-0 img_cont d-none d-md-block">
               <img src="@/assets/food1.png" id="food1" alt="">
@@ -70,7 +70,7 @@ export default {
     padding:15px 40px;
     border-radius: 50px;
     margin-top: 30px;
-
+    text-decoration: none;
     box-shadow: 0px 25px 50px rgba(35,57,99,0.5);
 }
 #heroPath{
