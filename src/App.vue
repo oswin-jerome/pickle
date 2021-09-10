@@ -35,4 +35,9 @@ body{
 
     box-shadow: 0px 25px 50px rgba(35,57,99,0.5);
 }
+.heading{
+    font-weight: bold;
+    font-size: 48px;
+    text-align: left;
+}
 </style>

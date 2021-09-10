@@ -26,6 +26,7 @@ export default {
         margin-top:40px;
         text-align: center;
         padding: 30px 0px;
+        height: 80vh;
     }
     h1{
         font-weight: bold;
