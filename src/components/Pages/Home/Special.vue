@@ -1,6 +1,6 @@
 <template>
   <div id="specials" class="container">
-      <h1>Our Specials</h1>
+      <h1 class="text-sm-center text-md-left">Our Specials</h1>
       <div class="grid">
           <div class="grid-item" v-for="special in specials" :key="special">
               <img src="@/assets/food3.png" alt="">
@@ -26,17 +26,17 @@ export default {
         margin-top:40px;
         text-align: center;
         padding: 30px 0px;
-        height: 80vh;
+        min-height: 80vh;
     }
     h1{
         font-weight: bold;
         font-size: 48px;
-        text-align: left;
     }
 
     .grid{
+        padding:20px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr ;
         gap: 30px;
         margin-top:20px
     }
@@ -52,5 +52,14 @@ export default {
     }
     .black-btn{
         margin-top:50px
+    }
+
+    @media screen and (min-width:700px){
+        .grid{
+        padding:0;
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+        }
     }
 </style>
