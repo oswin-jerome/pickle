@@ -33,7 +33,7 @@ nav ul{
     }
 
     nav ul li a{
-        padding:15px 50px;
+        /* padding:15px 50px; */
         padding-left: 0;
         display: inline-block;
         color: unset;
@@ -43,5 +43,12 @@ nav ul{
 
     nav ul li a:hover{
         font-weight: 500;
+    }
+    @media screen and (min-width:700px){
+        nav ul li a{
+        padding:15px 50px;
+        padding-left: 0;
+
+        }
     }
 </style>

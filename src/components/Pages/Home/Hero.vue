@@ -1,7 +1,7 @@
 <template>
   <div>
-      <div class="row container m-auto" id="hero">
-          <div class="col-6 p-0 m-0">
+      <div class="row container m-auto text-center text-md-left" id="hero">
+          <div class="col-md-6 col-sm-12 p-0 m-0">
               <h1 id="heading">
                 Freshness <br>
                 in every bite
@@ -9,17 +9,41 @@
               <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime atque aspernatur corrupti voluptatum rem.</p>
                 <a href="" id="cta">Contact us</a>
           </div>
-          <div class="col-6 p-0 m-0 img_cont">
+          <div class="col-md-6 col-sm-12 p-0 m-0 img_cont d-none d-md-block">
               <img src="@/assets/food1.png" id="food1" alt="">
           </div>
-              <img src="@/assets/path1.png" alt="" id="heroPath">
+              <img src="@/assets/path1.png" class="d-none d-md-block" alt="" id="heroPath">
       </div>
   </div>
 </template>
 
 <script>
+import {gsap} from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 export default {
+    mounted(){
+        var tl = gsap.timeline();
 
+        tl.from("#food1",{opacity:0,duration:0.5,scale:0.7});
+        tl.from("#heading",{opacity:0,duration:0.5,ease:"ease-in-out"});
+        tl.from("#description",{opacity:0,duration:0.5});
+        tl.from("#cta",{opacity:0,duration:0.5});
+
+        var scrollTimeline = gsap.timeline({
+            scrollTrigger: {
+            trigger: "#food1",
+            pin: false,   
+            start: "top top",
+            end: "+=500", 
+            scrub: 1, 
+                markers:false
+
+            }
+        });
+        scrollTimeline.addLabel("start")
+            .to("#food1", {rotation:-45,})
+    }
 }
 </script>
 
@@ -34,7 +58,7 @@ export default {
 }
 
 #description{
-    width: 400px;
+    width: 100%;
     font-size: 14px;
     opacity: 0.6;
 }
@@ -68,4 +92,11 @@ export default {
     justify-content: center; */
     /* background-color: red */
 }
+
+@media screen and (min-width:700px){
+        #description{
+        /* display: block; */
+        width: 70%;
+        }
+    }
 </style>
