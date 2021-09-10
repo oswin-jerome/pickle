@@ -20,4 +20,19 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 
 }
+
+body{
+  background:rgb(239, 243, 253)
+}
+
+.black-btn{
+  display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    padding:15px 40px;
+    border-radius: 50px;
+    margin-top: 30px;
+
+    box-shadow: 0px 25px 50px rgba(35,57,99,0.5);
+}
 </style>

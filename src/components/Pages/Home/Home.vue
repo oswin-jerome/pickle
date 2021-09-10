@@ -2,16 +2,22 @@
   <div>
       <NavBar id="nav" />
       <Hero/>
+      <About/>
+      <Special/>
   </div>
 </template>
 
 <script>
 import NavBar from "@/components/NavBar"
 import Hero from "./Hero.vue"
+import About from "./About.vue"
+import Special from "./Special.vue"
 export default {
     components:{
         NavBar,
-        Hero
+        Hero,
+        About,
+        Special
     }
 }
 </script>

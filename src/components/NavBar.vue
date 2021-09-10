@@ -37,5 +37,11 @@ nav ul{
         padding-left: 0;
         display: inline-block;
         color: unset;
+        text-decoration: none;
+        margin: 0px 6px;
+    }
+
+    nav ul li a:hover{
+        font-weight: 500;
     }
 </style>
