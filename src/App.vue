@@ -1,13 +1,16 @@
 <template>
   <Home/>
+  <Footer/>
 </template>
 
 <script>
 import Home from "./components/Pages/Home/Home.vue"
+import Footer from "./components/Footer.vue"
 export default {
   name: 'App',
   components: {
-    Home
+    Home,
+    Footer
   }
 }
 </script>
